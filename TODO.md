@@ -12,6 +12,8 @@
 -   [x] Dynamically add new invoice row to the table when generating
 -   [x] Update total calculation in modal
 -   [x] Clear modal form after adding
+-   [x] Add edit functionality for existing invoices
+-   [x] Add delete functionality for invoices
 
 ## Productos View
 
