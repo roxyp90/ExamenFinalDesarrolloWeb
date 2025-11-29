@@ -17,7 +17,9 @@
 
 -   [x] Add JavaScript to handle "Guardar Producto" button in modal
 -   [x] Dynamically add new product card to the page when saving
--   [x] Clear modal form after adding
+-   [x] Add edit functionality for existing products
+-   [x] Add delete functionality for products
+-   [x] Clear modal form after adding/editing
 
 ## Clientes View
 
