@@ -211,6 +211,15 @@ dd9aac3 subiendo funcionalidad en vista clientes
 
 ### Detalle de Cambios por Commit
 
+#### dc41d27 -Organizando el Backend de las Tablas
+
+-   Actualización completa de la documentación del proyecto
+-   Creación de README.md con información detallada del sistema
+-   Organización y separación del JavaScript inline en archivos externos
+-   Extracción de código JavaScript de las vistas a archivos separados (clientes.js, proveedores.js, productos.js, facturas.js)
+-   Mejora de la estructura y mantenibilidad del código frontend
+-   Documentación de tecnologías utilizadas, instalación y uso del sistema
+
 #### eb439e0 - Vista Factura Funcionalidad Terminada
 
 -   Implementación completa de la gestión de facturas
