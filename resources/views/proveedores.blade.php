@@ -150,6 +150,66 @@
                 </div>
             </div>
 
+            <!-- Estadísticas -->
+            <div class="row">
+                <div class="col-lg-3 col-6">
+                    <div class="small-box"
+                        style="background-color: #D97A26; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                        <div class="inner">
+                            <h3 style="color: white; font-weight: bold;">2</h3>
+                            <p style="color: white; margin: 0;">Proveedores Totales</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-truck" style="color: rgba(255,255,255,0.5);"></i>
+                        </div>
+                        <a href="#" class="small-box-footer" style="color: white; text-decoration: none;">Más info <i
+                                class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="small-box"
+                        style="background-color: #688B3E; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                        <div class="inner">
+                            <h3 style="color: white; font-weight: bold;">2</h3>
+                            <p style="color: white; margin: 0;">Proveedores Activos</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-check-circle" style="color: rgba(255,255,255,0.5);"></i>
+                        </div>
+                        <a href="#" class="small-box-footer" style="color: white; text-decoration: none;">Más info <i
+                                class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="small-box"
+                        style="background-color: #E8C547; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                        <div class="inner">
+                            <h3 style="color: #4A2E14; font-weight: bold;">239</h3>
+                            <p style="color: #4A2E14; margin: 0;">Total Productos</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-boxes" style="color: rgba(74, 46, 20, 0.3);"></i>
+                        </div>
+                        <a href="#" class="small-box-footer" style="color: #4A2E14; text-decoration: none;">Más info <i
+                                class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="small-box"
+                        style="background-color: #e74c3c; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                        <div class="inner">
+                            <h3 style="color: white; font-weight: bold;">+63.5%</h3>
+                            <p style="color: white; margin: 0;">Calidad Promedio</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-star" style="color: rgba(255,255,255,0.5);"></i>
+                        </div>
+                        <a href="#" class="small-box-footer" style="color: white; text-decoration: none;">Más info <i
+                                class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
             <!-- Información adicional -->
             <div class="row">
                 <div class="col-md-6">
@@ -280,88 +340,5 @@
     </div>
 </div>
 
-<script>
-    // Gráfico simple de proveedores (ejemplo)
-    document.addEventListener('DOMContentLoaded', function() {
-        // Aquí iría el código para inicializar un gráfico con Chart.js
-        console.log('Gráfico de proveedores cargado');
-
-        // Funcionalidad para agregar proveedor
-        const btnGuardarProveedor = document.querySelector(
-            '#modalAgregarProveedor .btn[style*="background-color: #688B3E"]');
-        const modalAgregarProveedor = document.getElementById('modalAgregarProveedor');
-
-        btnGuardarProveedor.addEventListener('click', function() {
-            const nombre = document.getElementById('nombreProveedor').value;
-            const contacto = document.getElementById('contactoProveedor').value;
-            const email = document.getElementById('emailProveedor').value;
-            const telefono = document.getElementById('telefonoProveedor').value;
-            const direccion = document.getElementById('direccionProveedor').value;
-            const especialidad = document.getElementById('especialidadProveedor').value;
-
-            if (!nombre || !contacto || !email) {
-                alert('Por favor complete los campos obligatorios: Nombre, Contacto y Email');
-                return;
-            }
-
-            // Crear nueva tarjeta de proveedor
-            const container = document.querySelector('.card-body .row');
-            const newCard = document.createElement('div');
-            newCard.className = 'col-md-6';
-            newCard.innerHTML = `
-                <div class="card card-widget widget-user" style="border-top: 3px solid #688B3E;">
-                    <div class="widget-user-header" style="background-color: #688B3E;">
-                        <h3 class="widget-user-username" style="color: white;">${nombre}</h3>
-                        <h5 class="widget-user-desc" style="color: white;">${especialidad}</h5>
-                    </div>
-                    <div class="widget-user-image">
-                        <img class="img-circle elevation-2" src="{{asset('backend/dist/img/user1-128x128.jpg')}}" alt="User Avatar">
-                    </div>
-                    <div class="card-footer">
-                        <div class="row">
-                            <div class="col-sm-4 border-right">
-                                <div class="description-block">
-                                    <h5 class="description-header" style="color: #D97A26;">0</h5>
-                                    <span class="description-text" style="color: #4A2E14;">PRODUCTOS</span>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 border-right">
-                                <div class="description-block">
-                                    <h5 class="description-header" style="color: #688B3E;">+0%</h5>
-                                    <span class="description-text" style="color: #4A2E14;">CALIDAD</span>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="description-block">
-                                    <h5 class="description-header" style="color: #688B3E;">ACTIVO</h5>
-                                    <span class="description-text" style="color: #4A2E14;">ESTADO</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-footer" style="background-color: white; border-top: 1px solid #e8e8e8;">
-                        <button class="btn btn-sm" style="background-color: #688B3E; color: white; border: none; border-radius: 4px; padding: 0.4rem 0.8rem;">Ver Productos</button>
-                        <button class="btn btn-sm" style="background-color: #E8C547; color: #4A2E14; border: none; border-radius: 4px; padding: 0.4rem 0.8rem;">Editar</button>
-                        <button class="btn btn-sm" style="background-color: #e74c3c; color: white; border: none; border-radius: 4px; padding: 0.4rem 0.8rem;">Eliminar</button>
-                    </div>
-                </div>
-            `;
-
-            container.appendChild(newCard);
-
-            // Limpiar formulario y cerrar modal
-            document.getElementById('nombreProveedor').value = '';
-            document.getElementById('contactoProveedor').value = '';
-            document.getElementById('emailProveedor').value = '';
-            document.getElementById('telefonoProveedor').value = '';
-            document.getElementById('direccionProveedor').value = '';
-            document.getElementById('especialidadProveedor').selectedIndex = 0;
-
-            // Cerrar modal
-            $('#modalAgregarProveedor').modal('hide');
-
-            alert('Proveedor agregado exitosamente');
-        });
-    });
-</script>
+<script src="{{ asset('backend/dist/js/proveedores.js') }}"></script>
 @endsection

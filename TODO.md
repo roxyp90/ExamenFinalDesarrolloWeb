@@ -5,6 +5,9 @@
 -   [x] Add JavaScript to handle "Guardar Proveedor" button in modal
 -   [x] Dynamically add new provider card to the page when saving
 -   [x] Clear modal form after adding
+-   [x] Add edit functionality for existing providers
+-   [x] Add delete functionality for providers
+-   [x] Update statistics after add/edit/delete operations
 
 ## Facturas View
 
