@@ -27,12 +27,13 @@
 <body class="welcome-page">
     <div class="welcome-container">
         <h1 style="color: #D97A26; font-size: 2.5rem; margin-bottom: 1rem; font-weight: bold;">Bienvenido a
-            {{ config('app.name') }}</h1>
+            {{ config('app.name') }}
+        </h1>
         <p style="color: #4A2E14; font-size: 1.2rem; margin-bottom: 2rem;">Gracias por visitar nuestra aplicación. Para
             empezar, inicia sesión o crea una cuenta nueva.</p>
-        <a href="" class="btn"
+        <a href="{{route('login')}}" class="btn"
             style="background-color: #688B3E; color: white; display: inline-block; padding: 0.75rem 1.5rem; margin: 0.5rem; text-decoration: none; border-radius: 4px; font-weight: 500;">Login</a>
-        <a href="" class="btn"
+        <a href="{{route('register')}}" class="btn"
             style="background-color: #E8C547; color: #4A2E14; display: inline-block; padding: 0.75rem 1.5rem; margin: 0.5rem; text-decoration: none; border-radius: 4px; font-weight: 500;">Register</a>
     </div>
 </body>

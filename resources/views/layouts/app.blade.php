@@ -20,9 +20,17 @@
     <link rel="stylesheet" href="{{('backend/plugins/fontawesome-free/css/all.min.css')}}">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{('backend/dist/css/adminlte.min.css')}}">
+    <link rel="icon" href="{{('img/logos/logoMercado.png')}}">
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+
+    <!-- jQuery -->
+    <script src="{{asset('backend/plugins/jquery/jquery.min.js')}}"></script>
+    <!-- Bootstrap 4 -->
+    <script src="{{asset('backend/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <!-- AdminLTE App -->
+    <script src="{{asset('backend/dist/js/adminlte.min.js')}}"></script>
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
